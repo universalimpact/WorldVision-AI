@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:background="@android:color/holo_blue_light"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.ankitgupta.worldvision.MainActivity">
+
+    <com.wonderkiln.camerakit.CameraView
+        android:id="@+id/viewcam"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_gravity="center|top" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:gravity="center"
+        android:layout_gravity="center|top"
+        android:layout_marginTop="300dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/imageresult"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:padding="2dp" />
+
+        <TextView
+            android:id="@+id/viewtext"
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:maxLines="15"
+            android:scrollbars="vertical"
+            android:layout_height="80dp"
+            android:fadeScrollbars="false"
+            android:textColor="@android:color/black" />
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/revcambutton"
+        android:background="@android:color/holo_blue_bright"
+        android:layout_width="match_parent"
+        android:text="@string/toggle_camera"
+        android:layout_height="48dp"
+        android:layout_marginBottom="50dp"
+        android:layout_gravity="bottom|center"
+        android:textAllCaps="false"
+        android:textColor="@android:color/black" />
+
+    <Button
+        android:id="@+id/detectbutton"
+        android:background="@android:color/holo_red_light"
+        android:layout_width="match_parent"
+        android:layout_gravity="bottom|center"
+        android:text="@string/detect_object"
+        android:layout_height="48dp"
+        android:textAllCaps="false"
+        android:textColor="@android:color/black"
+        android:visibility="gone" />
+
+</FrameLayout>

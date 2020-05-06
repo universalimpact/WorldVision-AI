@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">World Vision AI</string>
+    <string name="toggle_camera">Reverse Camera</string>
+    <string name="detect_object">Detect</string>
+</resources>
